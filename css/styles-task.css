@@ -1,0 +1,218 @@
+/* TASK-1 */
+.categories {
+  width: 100%;
+}
+.item {
+  width: 392px;
+  height: auto;
+  border-radius: 8px;
+
+  margin-bottom: 24px;
+  padding: 16px;
+
+  background-color: #f6f6fe;
+}
+
+.item h2 {
+  margin: 0px 0px 16px 0px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+}
+
+.item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+
+  padding: 8px 0px 8px 16px;
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+/* TASK-2 */
+.gallery {
+  max-width: 1128px;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 48px 24px;
+}
+
+.gallery li {
+  flex-basis: calc((100% - 48px) / 3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TASK-3 */
+#name-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+  padding: 8px 0px 8px 16px;
+}
+
+#name-input::placeholder {
+  color: #2e2f42;
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+/* TASK-4 */
+.login-form {
+  width: 408px;
+  height: 256px;
+  padding: 24px;
+}
+
+.login-form input {
+  width: 360px;
+  height: 40px;
+  padding: 8px 0px 8px 16px;
+
+  border-radius: 4px;
+  border: 2px solid #808080;
+  opacity: 0.7;
+}
+
+.login-form input:hover {
+  border: 2px solid #000000;
+}
+
+.login-form button {
+  width: 86px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  margin-top: 16px;
+
+  border-radius: 8px;
+  border: 0px;
+  background-color: #4e75ff;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.login-form button:hover {
+  background-color: #6c8cff;
+}
+
+/* TASK-5 */
+
+.widget button {
+  width: 148px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+
+  border: 0px;
+  background-color: #4e75ff;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.widget button:hover {
+  background-color: #6c8cff;
+}
+
+/* TASK-6 */
+#controls {
+  display: flex;
+  gap: 16px;
+  width: 486px;
+  padding: 32px;
+  margin-bottom: 16px;
+
+  border-radius: 8px;
+  background-color: #f6f6fe;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  padding: 8px 0px;
+
+  border-radius: 8px;
+  border: 1px solid #808080;
+  opacity: 0px;
+}
+
+#controls > button:nth-child(2) {
+  width: 120px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+
+  border-radius: 8px;
+  border: 0px;
+
+  background-color: #4e75ff;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+#controls > button:nth-child(2):hover {
+  background-color: #6c8cff;
+}
+
+#controls > button:nth-child(3) {
+  width: 120px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+
+  border-radius: 8px;
+  border: 0px;
+
+  background-color: #ff4e4e;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+#controls > button:nth-child(3):hover {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 44px;
+  padding: 32px;
+
+  border-radius: 8px;
+  background-color: #f6f6fe;
+}
