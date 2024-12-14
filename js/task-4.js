@@ -4,7 +4,7 @@ formElement.addEventListener('submit', event => {
     event.preventDefault();
 
     if (formElement.elements.email.value.trim() === '' || formElement.elements.password.value.trim() === '') {
-        alert('All form fields must be filled in');
+        return alert('All form fields must be filled in');
     }
 
     const loginObj = {
