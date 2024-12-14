@@ -5,35 +5,39 @@ function getRandomHexColor() {
 }
 
 const controlsPanel = document.querySelector('#controls');
-const input = controlsPanel.children[0];
+const inputNmb = controlsPanel.children[0];
 const btnCreate = controlsPanel.children[1];
 const btnDestroy = controlsPanel.children[2];
 const collection = document.querySelector('#boxes');
-
-
+  
 const createBoxes = amount => {
-  amount = input.value;
-
   collection.innerHTML = '';
-
-  let sizeBox = 30;
   let boxes = '';
+  let sizeBox = 30;
 
   if (!amount || amount < 1 || amount > 100) {
     alert('Будь ласка, введіть число від 1 до 100!');
-    return;
+    return inputNmb.value = '';;
   }
 
   for (let i = 0; i < amount; i++) {
-       boxes += `<div style="width: ${sizeBox}px; height: ${sizeBox}px; background-color: ${getRandomHexColor()}"></div>`;
+    boxes += `<div style="width: ${sizeBox}px; height: ${sizeBox}px; background-color: ${getRandomHexColor()}"></div>`;
     sizeBox += 10;
   }
+
   collection.insertAdjacentHTML('beforeend', boxes);
-}
+
+  inputNmb.value = '';
+};
 
 const destroyBoxes = () => {
   collection.innerHTML = '';
-} 
+  inputNmb.value = '';
+};
 
-btnCreate.addEventListener('click', createBoxes);
+btnCreate.addEventListener('click', () => {
+  const amount = Number(inputNmb.value);
+  createBoxes(amount);
+});
+
 btnDestroy.addEventListener('click', destroyBoxes);
